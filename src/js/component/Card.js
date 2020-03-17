@@ -22,7 +22,7 @@ export function Card(props) {
 	);
 }
 
-Card.PropTypes = {
+Card.propTypes = {
 	imgUrl: PropTypes.String,
 	title: PropTypes.String,
 	phone: PropTypes.String,
