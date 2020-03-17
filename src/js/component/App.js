@@ -27,16 +27,19 @@ let list = [
 
 export function App() {
     return(
-        {list.map(item,index) => {
+        {list.map((item, index) => {
             return(
+            <div className="d-flex justify-content-center">
                 <Card
-                    key:{index}
-                    imageUrl: {}
-
-
-
-            )
-        }}
+                    key={index}
+                    imgUrl={item.imageUrl}
+                    title={item.title}
+                    phone={item.phone}
+                    contactme={item.contactme}
+                />
+            </div>
+                );
+        })}
     )
 
 }
